@@ -1,0 +1,425 @@
+html {
+    background-color: #C8AE7D;
+}
+
+/* NAVIGATION */
+#headnavigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EAC696;
+}
+
+#navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    width: 65px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    background-color: #C8AE7D;
+    color:#fff;
+}
+
+.active {
+    background-color: #C8AE7D;
+    color: #fff;
+}
+
+/* SECTION TITLE */
+
+#headtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #C8AE7D;
+    color: #65451F;
+}
+
+#subtitle {
+    color: #65451F;
+}
+
+/* MAIN */
+
+#callUs {
+    display: flex;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.text {
+    color: #65451F;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.mySlides img{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+#titleform {
+    flex-grow: 1;
+    background-color: #EAC696;
+    color: #65451F;
+    padding: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+}
+
+form > input,
+select,
+button {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+/* PACKAGE */
+
+#ourpackage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    background-color: #C8AE7D;
+    color: #65451F;
+}
+.namepackage {
+    font-size: 25px;
+}
+section.listpackage {
+    background-color: #EAC696;
+}
+.firstpackage {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.cardpackage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    background-color: #C8AE7D;
+    align-items: center;
+}
+.cardpackage h6 {
+    margin-left: 10px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cardpackage p {
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 100;
+}
+.cardpackage img {
+    width: 35px;
+    margin-bottom: 75px;
+    margin-left: 10px;
+}
+
+/* FOOTER */
+
+#contact {
+    text-align: center;
+}
+
+.layar-luar {
+    padding: 30px;
+    border-top: 1px solid #b1b1b1;
+    border-bottom: 1px solid #b1b1b1;
+}
+  
+section {
+    padding: 20px 0px 20px 0px;
+}
+  
+section h3 {
+    font-size: 20px;
+}
+  
+section p.ringkasan {
+    font-size: 15px;
+}
+  
+.tombol {
+    background-color: black;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.footercontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #EAC696;
+}
+  
+footer .logoku {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+  
+footer .logoku img {
+    vertical-align: middle;
+    width: 65px;
+}
+
+/* CSS untuk tampilan desktop (ukuran layar lebih besar dari 992px) */
+.headnavigation {
+    max-width: 1000px;
+}
+
+/* CSS untuk tampilan tablet (ukuran layar antara 768px dan 991px) */
+@media only screen and (max-width: 991px) {
+    .headnavigation {
+        width: 90%;
+    }
+    nav .navigation {
+      margin-right: 0px;
+      margin-top: 5px;
+    }
+    nav .logo {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+    #headtitle {
+      width: 820px;
+    }
+    #callUs {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-left: 90px;
+    }
+    #slideshow-container {
+      width: 650px;
+      height: 30px;
+    }
+    #titleform {
+      align-items: center;
+      margin-left: 110px;
+      width: 300px;
+      height: 500px;
+    }
+}
+
+/* CSS untuk tampilan ponsel (ukuran layar antara 576px dan 767px) */
+@media only screen and (max-width: 767px) {
+    .headnavigation {
+      width: 90%;
+    }
+    nav .navigation {
+      max-width: 400px;
+      margin-right: -160px;
+    }
+    nav {
+      width: 100%;
+    }
+    .listing ol {
+      margin-top: 0px;
+    }
+    #callUs {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: 0px;
+    }
+    #slideshow-container {
+      align-items: center;
+      margin-left: 80px;
+    }
+    #form {
+      align-items: center;
+      margin-left: 40px;
+      width: 300px;
+      height: 500px;
+    }
+    #ourpackage {
+      margin-right: -160px;
+    }
+    .listpackage {
+      margin-right: -160px;
+    }
+    .layar-luar {
+      margin-right: -160px;
+    }
+    .footercontent {
+      margin-right: -160px;
+    }
+  }
+  
+  /* CSS untuk tampilan ponsel (ukuran layar antara 576px dan 767px) */
+  @media only screen and (max-width: 767px) {
+    .headnavigation {
+      width: 90%;
+    }
+    nav .navigation {
+      max-width: 400px;
+      margin-right: -160px;
+    }
+    nav {
+      width: 100%;
+    }
+    .listing ol {
+      margin-top: 0px;
+    }
+    #callUs {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: 0px;
+    }
+    #slideshow-container {
+      align-items: center;
+      margin-left: 80px;
+    }
+    #form {
+      align-items: center;
+      margin-left: 40px;
+      width: 300px;
+      height: 500px;
+    }
+    #ourpackage {
+      margin-right: -160px;
+    }
+    .listpackage {
+      margin-right: -160px;
+    }
+    .layar-luar {
+      margin-right: -160px;
+    }
+    .footercontent {
+      margin-right: -160px;
+    }
+  }
+  
+  /* CSS untuk tampilan ponsel kecil (ukuran layar kurang dari 576px) */
+  @media only screen and (max-width: 575px) {
+    .headnavigation {
+      width: 100%;
+    }
+    nav .navigation {
+      max-width: 100%;
+      margin-right: -340px;
+    }
+    nav .logo {
+      width: 50px;
+      margin-left: 80px;
+    }
+    nav ul li a {
+      padding: 0px 8px;
+    }
+    #slideshow-container {
+      width: 700px;
+      height: 30px;
+    }
+    #form {
+      margin-left: 60px;
+    }
+    #ourpackage {
+      align-items: center;
+      margin-left: 0px;
+      margin-right: -410px;
+    }
+    .listpackage {
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 0px;
+      margin-right: -405px;
+    }
+    .layar-luar {
+      align-items: center;
+      margin-left: 0px;
+      margin-right: -410px;
+    }
+    .footercontent {
+      align-items: center;
+      margin-left: 0px;
+      margin-right: -410px;
+    }
+  }
